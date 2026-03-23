@@ -2,7 +2,7 @@
 //Approach:We use two hashMap to store the element of first array . And second HashSet is used to if the second array element contain to the first
 //HashMap element then we return its output as intersections element.
 //Time Complexity:O(n)
-//Space Complexity:O(1)
+//Space Complexity:O(n)
 //Code:
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
