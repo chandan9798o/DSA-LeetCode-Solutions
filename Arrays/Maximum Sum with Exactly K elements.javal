@@ -1,0 +1,17 @@
+//Platform:LeetCode
+//Approach:first of all i sort the arrays and then using while loop we add the last element of array and update every time until the k become zero.And in last we return sum.
+//Time complexity:O(n log n + k)
+//Space complexity:O(1)
+//Code--
+class Solution {
+    public int maximizeSum(int[] nums, int k) {
+        int sum = 0;
+        Arrays.sort(nums);
+        while(k!=0){
+            sum += nums[nums.length-1];
+            nums[nums.length-1]+=1;
+            k--;
+        }
+        return sum;
+    }
+}
