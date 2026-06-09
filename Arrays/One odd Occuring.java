@@ -13,9 +13,9 @@ class Solution {
        }
        for(Map.Entry<Integer, Integer> entry : map.entrySet()){
            if(entry.getValue() % 2 != 0){
-               val = entry.getKey();
+               return entry.getKey();
            }
        }
-       return val;
+       return -1;
     }
 }
